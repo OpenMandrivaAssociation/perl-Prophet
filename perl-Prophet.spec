@@ -45,6 +45,9 @@ BuildRequires: perl(URI)
 BuildRequires: perl(UUID::Tiny)
 BuildRequires: perl(XML::Atom::SimpleFeed)
 BuildRequires: perl(YAML::Syck)
+BuildRequires: perl(Path::Dispatcher::Declarative)
+# for testing
+BuildRequires: rsync
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
