@@ -3,9 +3,9 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
-Summary:    Extra types for Prophet
+Summary:    A distributed database system
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
@@ -50,6 +50,9 @@ BuildRequires: perl(Path::Dispatcher::Declarative)
 BuildRequires: rsync
 
 Requires:      perl(Path::Dispatcher::Declarative) 
+# for server
+Requires:      perl(HTTP::Server::Simple::CGI)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
