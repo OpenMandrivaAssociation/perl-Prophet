@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Extra types for Prophet
 License:    GPL+ or Artistic
@@ -48,6 +48,8 @@ BuildRequires: perl(YAML::Syck)
 BuildRequires: perl(Path::Dispatcher::Declarative)
 # for testing
 BuildRequires: rsync
+
+Requires:      perl(Path::Dispatcher::Declarative) 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
