@@ -1,9 +1,9 @@
 %define upstream_name    Prophet
-%define upstream_version 0.741
+%define upstream_version 0.743
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    A distributed database system
 License:    GPL+ or Artistic
