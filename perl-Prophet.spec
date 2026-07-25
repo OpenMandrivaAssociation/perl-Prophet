@@ -1,15 +1,15 @@
 %define upstream_name    Prophet
-%define upstream_version 0.743
+%define upstream_version 0.751
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	A distributed database system
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://syncwith.us
+Source0:	https://cpan.metacpan.org/authors/id/I/IO/IOANR/Prophet-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
